@@ -6,69 +6,78 @@
   <title>Joel Haverinen - Embedded Engineer</title>
 
   <link rel="stylesheet" href="style.css">
-
-  <!-- Modern font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- HERO -->
   <header class="hero">
     <h1>Joel Haverinen</h1>
     <p>Embedded Systems • IoT • Electronics • Measurement Systems</p>
+    <a href="https://github.com/joelhaverinen" target="_blank">GitHub</a>
   </header>
 
+  <!-- CONTENT -->
   <main class="container">
 
+    <!-- ABOUT -->
     <section class="card">
       <h2>About</h2>
       <p>
-        I work with embedded systems, sensor systems, and experimental energy harvesting research.
-        My experience combines software (C/C++, Python) and hardware development in real test environments.
+        I have worked with embedded systems, sensor systems, and experimental energy harvesting research.
+        My experience combines software (C++ and Python) and hardware development in real test environments.
       </p>
     </section>
 
+    <!-- PROJECTS -->
     <section class="card">
       <h2>Projects</h2>
 
+      <!-- Project 1 -->
       <div class="project">
         <h3>Energy Harvesting IoT System</h3>
         <p>
-          Ultra-low-power energy harvesting research system with BLE, LoRa, and Raspberry Pi gateways.
+          Ultra-low-power energy harvesting system with BLE, LoRa, and Raspberry Pi gateways.
         </p>
+
         <div class="img-grid">
-          <img src="Images/lohkodiagrammi.jpg">
-          <img src="Images/energyharvesting_hv.jpg">
-          <img src="Images/HarvestingUnit.jpg">
+          <img src="Images/lohkodiagrammi.jpg" class="project-img" alt="diagram">
+          <img src="Images/energyharvesting_hv.jpg" class="project-img" alt="energy harvesting">
+          <img src="Images/HarvestingUnit.jpg" class="project-img" alt="unit">
         </div>
       </div>
 
+      <!-- Project 2 -->
       <div class="project">
         <h3>Embedded Sensor Systems</h3>
         <p>
           Low-power voltage monitoring system using Arduino Nano and Raspberry Pi.
-          Includes op-amp based signal conditioning for accurate low-voltage measurement.
+          Includes op-amp based signal conditioning.
         </p>
-        <img src="Images/measurement_circuit.jpg">
+
+        <img src="Images/measurement_circuit.jpg" class="project-img" alt="circuit">
       </div>
 
+      <!-- Project 3 -->
       <div class="project">
         <h3>Data Acquisition & Analysis</h3>
         <p>
-          Built data pipelines using Python and MATLAB for measurement analysis and visualization.
+          Python and MATLAB-based data pipelines for measurement analysis.
         </p>
       </div>
 
     </section>
 
+    <!-- SKILLS -->
     <section class="card">
       <h2>Skills</h2>
+
       <div class="skills">
         <span>C / C++</span>
         <span>Python</span>
         <span>STM32</span>
         <span>UART / SPI / I2C</span>
-        <span>Oscilloscope / VNA</span>
+        <span>Oscilloscope</span>
         <span>Linux</span>
       </div>
     </section>
