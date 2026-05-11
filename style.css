@@ -1,9 +1,8 @@
-/* BASE */
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: #0b1220;
-  color: #e5e7eb;
+  background: #ffffff;
+  color: #1f2937;
   line-height: 1.6;
 }
 
@@ -11,6 +10,8 @@ body {
 .hero {
   text-align: center;
   padding: 60px 16px;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .hero h1 {
@@ -19,23 +20,14 @@ body {
 }
 
 .hero p {
-  color: #94a3b8;
+  color: #6b7280;
   margin-top: 8px;
 }
 
-/* LINKIT / BUTTON */
+/* LINKIT */
 a {
-  color: #60a5fa;
+  color: #2563eb;
   text-decoration: none;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 16px;
-  background: #1f2937;
-  border-radius: 8px;
-  color: #e5e7eb;
 }
 
 /* CONTAINER */
@@ -47,38 +39,45 @@ a {
 
 /* CARD */
 .card {
-  background: #111827;
-  border: 1px solid #1f2937;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 18px;
   margin-bottom: 16px;
 }
 
-/* PROJECT BLOCK */
+/* 🔥 PROJECT LAYOUT (TÄRKEIN OSA) */
 .project {
   margin-top: 16px;
+
+  /* pakottaa kaiken pystysuuntaan */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 12px;
 }
 
-/* 🔥 TÄRKEIN FIX: KUVIEN KOKO */
+/* 🔥 KUVAT AINA ALLEKKAIN + SAMA LOGIIKKA */
 .project-img {
   width: 100%;
-  max-width: 550px;   /* 👈 estää liian leveän kuvan */
+  max-width: 520px;   /* hallittu visuaalinen koko */
   height: auto;
+
+  /* keskitys */
   display: block;
-  margin: 12px auto;
+  margin: 0 auto;
+
   border-radius: 10px;
+
+  /* kevyt, ei raskas */
+  border: 1px solid #e5e7eb;
 }
 
-/* IMAGE GRID */
+/* jos useita kuvia yhdessä projektissa */
 .img-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;  /* 🔥 EI vierekkäin koskaan */
+  gap: 12px;
   width: 100%;
-  max-width: 600px;
 }
 
 /* SKILLS */
@@ -89,11 +88,10 @@ a {
 }
 
 .skills span {
-  background: #1f2937;
+  background: #f3f4f6;
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 13px;
-  color: #cbd5e1;
 }
 
 /* HEADINGS */
@@ -103,13 +101,13 @@ h2 {
   margin-top: 0;
 }
 
-/* MOBILE OPTIMIZATION */
+/* RESPONSIVE */
 @media (min-width: 700px) {
   .hero h1 {
     font-size: 52px;
   }
 
-  .img-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .project-img {
+    max-width: 600px;
   }
 }
