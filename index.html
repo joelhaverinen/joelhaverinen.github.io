@@ -1,60 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joel Haverinen - Embedded Engineer</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- Modern font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Joel Haverinen</h1>
-  <p>Embedded Systems / IoT / Electronics / Measurement Systems</p>
 
-  <h2>About</h2>
-  <p>
-    I work with embedded systems, sensor systems, and experimental energy harvesting research.
-    My experience combines software (C/C++, Python) and hardware development in real test environments.
-  </p>
-  
-  <h2>Projects</h2>
+  <header class="hero">
+    <h1>Joel Haverinen</h1>
+    <p>Embedded Systems • IoT • Electronics • Measurement Systems</p>
+    <a href="https://github.com/joelhaverinen" target="_blank" class="btn">GitHub</a>
+  </header>
 
-  <h3>Energy Harvesting IoT System</h3>
-  <p>
-    Developed measurement systems and prototypes for ultra-low-power energy harvesting research.
-    Worked with BLE, LoRa, and Raspberry Pi-based gateways.
-  </p>
-  <img src="Images/lohkodiagrammi.jpg" alt="Kuva" width="400">
-  <br>
-  <img src="Images/energyharvesting_hv.jpg" alt="Kuva" width="400">
-  <br>
-  <img src="Images/HarvestingUnit.jpg" alt="Kuva" width="400">
-  <h3>Embedded Sensor Systems</h3>
-  <p>
-  Designed and implemented low-power voltage monitoring circuits using Arduino Nano and Raspberry Pi platforms.<br>
-  The system is capable of accurately measuring very small voltage levels without significant voltage drop caused by the measurement resistor.<br>
-  Operational amplifier (op-amp) was used for signal conditioning and impedance buffering.
-  </p>
-  <img src="Images/measurement_circuit.jpg" alt="Kuva" width="400">
-  <h3>Data Acquisition & Analysis</h3>
-  <p>
-    Built data pipelines using Python and MATLAB.
-  </p>
+  <main class="container">
 
-  <h2>Skills</h2>
-  <ul>
-    <li>C / C++</li>
-    <li>Python</li>
-    <li>STM32 / Embedded Systems</li>
-    <li>UART / SPI / I2C</li>
-    <li>Lab equipment (oscilloscope, VNA)</li>
-    <li>Linux</li>
-  </ul>
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        I work with embedded systems, sensor systems, and experimental energy harvesting research.
+        My experience combines software (C/C++, Python) and hardware development in real test environments.
+      </p>
+    </section>
 
-  <h2>Links</h2>
-  <p>
-    GitHub: https://github.com/joelhaverinen<br>
+    <section class="card">
+      <h2>Projects</h2>
 
-  </p>
+      <div class="project">
+        <h3>Energy Harvesting IoT System</h3>
+        <p>
+          Ultra-low-power energy harvesting research system with BLE, LoRa, and Raspberry Pi gateways.
+        </p>
+        <div class="img-grid">
+          <img src="Images/lohkodiagrammi.jpg">
+          <img src="Images/energyharvesting_hv.jpg">
+          <img src="Images/HarvestingUnit.jpg">
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Embedded Sensor Systems</h3>
+        <p>
+          Low-power voltage monitoring system using Arduino Nano and Raspberry Pi.
+          Includes op-amp based signal conditioning for accurate low-voltage measurement.
+        </p>
+        <img src="Images/measurement_circuit.jpg">
+      </div>
+
+      <div class="project">
+        <h3>Data Acquisition & Analysis</h3>
+        <p>
+          Built data pipelines using Python and MATLAB for measurement analysis and visualization.
+        </p>
+      </div>
+
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>C / C++</span>
+        <span>Python</span>
+        <span>STM32</span>
+        <span>UART / SPI / I2C</span>
+        <span>Oscilloscope / VNA</span>
+        <span>Linux</span>
+      </div>
+    </section>
+
+  </main>
 
 </body>
 </html>
